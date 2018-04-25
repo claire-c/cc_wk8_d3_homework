@@ -1,12 +1,17 @@
 package com.cconnachan.listapp;
 
+import android.graphics.Movie;
+
 import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
 
+import static org.junit.Assert.assertEquals;
+
 public class TopCountriesTest {
 
-    private ArrayList<Country> topCountries;
+    private TopCountries topCountries;
     private Country country1;
     private Country country2;
     private Country country3;
@@ -16,12 +21,15 @@ public class TopCountriesTest {
         country1 = new Country("France", 1999, "The food");
         country2 = new Country("Netherlands", 2015, "The cycling");
         country3 = new Country("Spain", 2017, "The sunshine");
-        topCountries = new ArrayList<Country>();
-        topCountries.add(country1);
-        topCountries.add(country2);
-        topCountries.add(country3);
+        topCountries = new TopCountries();
     }
 
-    public void 
+    @Test
+    public void canGetCountriesList(){
+        assertEquals(8, topCountries.getList().size());
+    }
+
+
+
 
 }
