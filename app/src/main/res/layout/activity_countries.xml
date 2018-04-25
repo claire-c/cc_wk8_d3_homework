@@ -7,6 +7,7 @@
     tools:context=".CountriesActivity">
 
     <ListView
+        android:id="@+id/countriesListViewId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="8dp"
