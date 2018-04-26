@@ -29,7 +29,14 @@ public class TopCountriesTest {
         assertEquals(8, topCountries.getList().size());
     }
 
+    @Test
+    public void canAddCountry(){
+        topCountries.addCountry(country1);
+        topCountries.addCountry(country2);
+        topCountries.addCountry(country3);
+        assertEquals(11, topCountries.getList().size());
 
+    }
 
 
 }

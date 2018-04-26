@@ -21,4 +21,8 @@ public class TopCountries {
     public ArrayList<Country> getList() {
         return new ArrayList<Country>(list);
     }
+
+    public void addCountry(Country country){
+        list.add(country);
+    }
 }
